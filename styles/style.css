@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@layer utilities {
+    .inter {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+    }
+}
+
+header{
+        background-image: url('/assets/hero-bg.png');
+        background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+}
+.banner {
+    /* height: 760px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.banner-image {
+    background-image: url('/assets/hero-circle.png');
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .banner-image > img{
+    width: 100%;
+height: 200px;
+} */
