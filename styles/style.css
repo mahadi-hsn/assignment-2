@@ -16,6 +16,12 @@ header {
 
 }
 
+.text{
+    background-image: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+    color: transparent;
+    background-clip: text;
+}
+
 .banner {
     /* height: 760px; */
     display: flex;
@@ -106,3 +112,19 @@ height: 200px;
     opacity: 0.6;
     color: rgba(255, 255, 255, 1);
 }
+
+/* Footer styles */
+.brands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.brands > p{
+    font-size: 16px;
+font-weight: 600;
+color: rgba(255, 255, 255, 1);
+opacity: 0.6;
+}
+
