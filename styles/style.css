@@ -216,8 +216,11 @@ a:hover {
     }
 
     .about-content p {
-        width: 400px;
+        width: 500px;
         padding: 0 25px;
+        margin: 0 auto;
+        line-height: 20px;
+        margin-bottom: 30px;
     }
 
     .about-cards {
@@ -255,10 +258,14 @@ a:hover {
 
     .feature-container {
         flex-direction: column;
-        margin: 0 15px;
+        margin: 0 100px;
         gap: 15px;
     }
 
+    .card1{
+        width: 400px;
+        margin: 0 auto;
+    }
     .host>h4 {
         font-size: 32px;
         font-weight: 800;
