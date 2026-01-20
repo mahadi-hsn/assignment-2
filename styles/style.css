@@ -9,17 +9,68 @@
 }
 
 #hero {
-background-image: url('/assets/hero-bg.png');
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center ;
-/* height: 760px; */
-/* background-attachment: fixed; */
+    background-image: url('/assets/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.new{
+a:hover {
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+}
+
+.new {
     box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
 }
+
+@keyframes newPulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(0, 255, 136, 0.6);
+    }
+
+    50% {
+        transform: scale(1.08);
+        box-shadow: 0 0 25px rgba(0, 255, 136, 0.9);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(0, 255, 136, 0.6);
+    }
+
+}
+
+.new {
+    animation: newPulse 1.6s infinite ease-in-out;
+}
+
+@keyframes BTNpulse {
+
+    0% {
+        transform: scale(0.9);
+        box-shadow: linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    }
+
+    50% {
+        transform: scale(1);
+        box-shadow: linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    }
+
+    100% {
+        transform: scale(0.9);
+        box-shadow: linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    }
+}
+
+.btn {
+    animation: BTNpulse 1.8s infinite ease-in-out;
+}
+
 
 
 
@@ -41,7 +92,7 @@ background-position: center ;
 .card1 {
     border-radius: 40px;
     background: rgba(53, 17, 101, 0.4);
-    padding: 40px;
+    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -91,17 +142,152 @@ background-position: center ;
 }
 
 /* Footer styles */
-.brands{
+.brands {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
 }
 
-.brands > p{
+.brands>p {
     font-size: 16px;
-font-weight: 600;
-color: rgba(255, 255, 255, 1);
-opacity: 0.6;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.6;
 }
 
+@media screen and (max-width:576px) {
+
+    nav {
+        padding: 0 20px;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    nav>button {
+        display: none;
+    }
+
+    #hero {
+        background-position: center;
+    }
+
+
+    .hero-content>h2 {
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 39px;
+    }
+
+    .hero-content>p {
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .img-small {
+        width: 200px;
+        position: relative;
+        left: 24%;
+        top: 24%;
+    }
+
+    .img-small2 {
+        width: 50px;
+        position: absolute;
+        top: 42%;
+        left: 45%;
+    }
+
+    .new {
+        position: absolute;
+        top: 25%;
+        left: 65%;
+    }
+
+    .about-content h2 {
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 39px;
+    }
+
+    .about-content p {
+        width: 400px;
+        padding: 0 25px;
+    }
+
+    .about-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+        padding: 0 20px;
+    }
+
+    .about-cards h2 {
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+    .choosing-container>h2 {
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 39px;
+    }
+
+    .choosing-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 20px;
+    }
+
+    .card1 {
+        padding: 20px0 20px;
+    }
+
+    #feature>h4 {
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+    .feature-container {
+        flex-direction: column;
+        margin: 0 15px;
+        gap: 15px;
+    }
+
+    .host>h4 {
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 39px;
+    }
+
+    .host-container {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 20px;
+    }
+
+    .host-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    .social-icons {
+        /* width: 255px; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+    }
+
+
+}
